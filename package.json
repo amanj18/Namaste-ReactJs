@@ -2,7 +2,7 @@
   "name": "day-1",
   "version": "1.0.0",
   "description": "this is a react course",
-  "main": "App.js",
+
   "scripts": {
     "test": "jest"
   },

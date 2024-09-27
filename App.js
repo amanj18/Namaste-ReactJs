@@ -1,3 +1,19 @@
+// HMR Hot Module Replacement
+// File Watcher algorithm
+// BUNDLING
+// MINIFY
+// Cleaning our Code
+// Dev abd Production Build
+// Super Fast build algorithe
+// Image Optimization
+// Caching while development
+// Compression
+// Compatble with older version of browser
+// HTTPS on dev
+// port Number
+// Consistent Hashing Algorithm
+// Zero Config
+
 import React from "react";
 import ReactDOM from "react-dom/client";
 
