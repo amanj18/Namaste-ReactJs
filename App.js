@@ -16,15 +16,34 @@
 // Zero Config
 // tree shaking - removing unwanted
 // transitive dependencies
-
+  
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const head1=React.createElement("h1",{id:"title",key:"h1"},"heading 1"); 
-const head2=React.createElement("h2",{id:"title",key:"h2"},"heading 2");
-console.log(head1);
-const con=React.createElement("div",{id:"container"},[head1,head2]);
-const root2 = ReactDOM.createRoot(document.getElementById('root'));
-root2.render(con);
+// react element
+// const head1=React.createElement("h1",{id:"title",key:"h1"},"heading 1"); 
+// const head2=React.createElement("h2",{id:"title",key:"h2"},"heading 2");
+const head2=(
+<h1 id="title" key="h2">Aman</h1>
+);
+const Head3=()=> (
+<h1 id="title" key="h2">Aman</h1>
+);
+// console.log(head1);
+// const con=React.createElement("div",{id:"container"},[head1,head2]);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+// root2.render(con);
+
+const Header = ()=>{
+    return (
+    <div>
+        {head2}
+        <h1>functional comp</h1>
+        <Head3/>
+        {Head3()}
+    </div>
+    );
+};
+root.render(<Header/>);
 
 
